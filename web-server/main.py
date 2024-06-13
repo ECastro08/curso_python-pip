@@ -12,6 +12,7 @@ def get_list():
 def get_list():
     return """
         <h1>Soy Eduardo Castro</h1>
+        <h2>Soy ingeniero mecatronico</h2>
         <P> este parrafo nos dice que la fastapi ademas de mostrar datos como listas, json, tambien permite contenido HTML</p>
     """
 

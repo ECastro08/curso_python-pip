@@ -1,0 +1,11 @@
+# desde que version va iniciar
+FROM python:3.9  
+# crear carpeta (app)dentro del contenedor
+WORKDIR /app  
+# copiar archivo requirements del local al entorno donde esta el docker
+COPY requirements.txt /app/requirements.txt 
+RUN pip install —no-cache-dir —upgrade -r /app/requirements.txt
+#copiar todo el codigo hacia la carpeta app (espacio de trabajo)
+COPY . /app/
+#para mantener encendido el contenedor
+CMD bash -c ‘while true; do sleep 1; done’ 
